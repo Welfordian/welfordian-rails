@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="flex items-center justify-between flex-wrap bg-blue-darker p-3 mb-6 shadow-lg fixed w-full pin-t z-10" data-v-22d0ebb1="">
+      <div class="flex items-center flex-no-shrink text-white mr-6" data-v-22d0ebb1=""><span class="font-semibold text-xl tracking-tight" data-v-22d0ebb1="">Joshua Welford</span></div>
+      <div class="block lg:hidden" data-v-22d0ebb1="">
+        <button class="flex items-center px-3 py-2 border rounded text-blue-lighter border-blue-light hover:text-white hover:border-white" data-v-22d0ebb1="">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="fill-current h-3 w-3" data-v-22d0ebb1="">
+              <title data-v-22d0ebb1="">Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" data-v-22d0ebb1=""></path>
+            </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden" data-v-22d0ebb1="">
+        <div class="text-sm lg:flex-grow" data-v-22d0ebb1=""><a href="/" class="nav-link block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 nuxt-link-exact-active nuxt-link-active text-white no-underline" data-v-22d0ebb1="">
+            Blog
+            </a> <a href="/contact" class="nav-link block mt-4 lg:inline-block lg:mt-0 hover:text-white text-blue-lighter" data-v-22d0ebb1="">
+            Contact
+            </a> <a href="/dashboard" class="ml-4 nav-link block mt-4 lg:inline-block lg:mt-0 hover:text-white text-blue-lighter" data-v-22d0ebb1="">Dashboard</a>
+        </div>
+        <div data-v-22d0ebb1="">
+            <p class="nav-btn inline-block text-sm leading-none text-white no-underline hover:border-transparent mt-4 lg:mt-0 mr-4 flex items-center" data-v-22d0ebb1=""><span class="mr-2 cursor-pointer" data-v-22d0ebb1="">Dark Mode</span> <span class="border rounded-full border-grey flex items-center cursor-pointer w-12 justify-end bg-green" data-v-22d0ebb1=""><span class="rounded-full border w-6 h-6 border-grey shadow-inner bg-white shadow" data-v-22d0ebb1=""></span></span></p>
+        </div>
+        <div data-v-22d0ebb1=""><button class="nav-btn inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white no-underline hover:border-transparent hover:text-grey-darker hover:bg-white mt-4 lg:mt-0" data-v-22d0ebb1="">Logout</button></div>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

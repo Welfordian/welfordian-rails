@@ -1,0 +1,24 @@
+<div class="container-fluid m-auto pb-8 pt-12 sm:mt-18 min-h-screen h-full bg-blue-darkest" data-v-22d0ebb1="">
+   <div class="flex flex-wrap justify-between items-center self-center justify-center sm:justify-center">
+      <div class="w-full sm:w-full lg:w-1/4 mt-8"><img src="https://api.welford.me/images/me-min.jpg" alt="My very own beautiful face" class="mt-8 mb-8 w-48 h-48 m-auto block shadow-lg rounded-lg"></div>
+      <div class="mt-8 mb-8 w-full justify-center lg:w-1/3">
+         <h1 class="text-center lg:text-left text-white">I'm Joshua Welford.</h1>
+         <p class="text-center lg:text-left text-white">A web developer specializing in Laravel &amp; Vue.</p>
+         <div class="flex justify-center lg:justify-start"><a href="/contact" class="app-button sm:w-auto font-bold py-2 px-4 rounded shadow-md focus:shadow-lg focus:outline-none mt-12 text-blue-darkest bg-white hover:bg-grey-light hover:shadow-lg inline-block no-underline" data-v-f16a3898="">Let's work together</a></div>
+      </div>
+   </div>
+   <div class="flex flex-row flex-wrap content-center justify-center" data-v-f95548dc="">
+    <% @posts.each do |post| %>
+        <a data-v-f95548dc="" href="<%= post.slug %>" class="blog-post-card no-underline max-w-sm rounded overflow-hidden shadow-md focus:shadow-lg focus:outline-none hover:shadow-lg m-4 sm:w-full md:w-1/3 lg:w-1/4 xl:w-1/4 cursor-pointer bg-blue-darker" tabindex="0">
+        <%= image_tag post.intro_image, :alt => 'intro image', :class => 'w-full h-64' %> 
+         <div data-v-f95548dc="" class="px-6 py-4">
+            <div data-v-f95548dc="" class="font-bold text-lg mb-5 text-grey-darkest text-white"><%= post.title %></div>
+            <p data-v-f95548dc="" class="text-grey-darker text-base no-underline text-white">
+               If you're fetching data, for a blog post for instance and then displaying those results... why fetch the data more than once?
+            </p>
+         </div>
+      </a>
+    <% end %>
+   </div>
+   <div></div>
+</div>
