@@ -1,0 +1,12 @@
+<div data-v-22d0ebb1="" class="bg-blue-darkest text-white">
+   <div class="container-fluid m-auto pb-24 pt-24 min-h-screen h-full px-4 w-3/4 m-auto">
+      <div class="font-sans mb-8">
+         <a href="/" class="nav-link block mt-4 lg:inline-block lg:mt-0 bg-transparent font-bold nuxt-link-active hover:text-blue text-blue-dark"><span class="text-base md:text-sm font-bold mr-1">&lt;</span>BACK TO BLOG</a> 
+         <h1 class="font-sans break-normal pt-6 pb-2 text-3xl md:text-4xl"><%= @post.title %></h1>
+         <p class="text-sm md:text-base font-normal text-grey-dark"></p>
+      </div>
+      <div class="bg-blue-darkest text-white">
+         <%= @post.content.html_safe %>
+      </div>
+   </div>
+</div>

@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ pre {
+    background-color: #1c3d5a;
+    font-size: .875rem;
+    color: #fff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: .25rem;
+    overflow: auto;
+}
